@@ -27,6 +27,11 @@ function UserMenu({ className, ...rest }: UserMenuProps) {
             {t.formatMessage(messages.menuAccountPreferences)}
           </a>
         </Link>
+        <Link href={`https://tmes-uat.saleor.cloud/dashboard`} passHref legacyBehavior>
+          <a tabIndex={0} className={styles["user-menu-item"]} href="pass" target="_blank">
+            {t.formatMessage(messages.menuDashboard)}
+          </a>
+        </Link>
         <button type="button" onClick={onLogout} tabIndex={-1} className={styles["user-menu-item"]}>
           {t.formatMessage(messages.logOut)}
         </button>
