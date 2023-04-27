@@ -29,7 +29,6 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
   };
 };
 function Home({ menuData }: InferGetStaticPropsType<typeof getStaticProps>) {
-  console.log({ menuData });
   return (
     <>
       <BaseSeo />
